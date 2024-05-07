@@ -7,7 +7,7 @@ const JobList = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/jobs')
+    axios.get('http://localhost:4000/jobs')
       .then(response => {
         setJobs(response.data);
         console.log("Uzee");
@@ -20,7 +20,7 @@ const JobList = () => {
   return (
     <div className="job-list">
       <h2>Job Listings</h2>
-      <ul>
+      <ul className='container'>
         {jobs.map(job => (
           <JobItem key={job.id} job={job} />
         ))}

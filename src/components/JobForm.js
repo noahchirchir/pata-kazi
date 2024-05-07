@@ -1,51 +1,70 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const JobForm = () => {
-  const [formData, setFormData] = useState({
-    title: '',
-    description: '',
-    location: ''
-  });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
+function JobForm(){
+    const [formData, setFormData] = useState({
+        title: '',
+        description: '',
+        company: '',
+        location: '',
+        date_posted: ''
     });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios.post('http://localhost:3001/jobs', formData)
-      .then(response => {
-        console.log('Job posted successfully:', response.data);
-        // Reset form fields
-        setFormData({
-          title: '',
-          description: '',
-          location: ''
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      axios.post('http://localhost:4000/jobs', formData)
+        .then(response => {
+          console.log('Job posted successfully:', response.data);
+          // Reset form fields
+          setFormData({
+            title: '',
+            description: '',
+            company: '',
+            location: '',
+            date_posted: ''
         });
-      })
-      .catch(error => {
-        console.error('Error posting job:', error);
-      });
-  };
+        })
+        .catch(error => {
+          console.error('Error posting job:', error);
+        });
+    };
+  
 
-  return (
-    <div className="job-form">
-      <h2>Post a Job</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Title:</label>
-        <input type="text" name="title" value={formData.title} onChange={handleChange} required />
-        <label>Description:</label>
-        <textarea name="description" value={formData.description} onChange={handleChange} required />
-        <label>Location:</label>
-        <input type="text" name="location" value={formData.location} onChange={handleChange} required />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  );
-}
+    return (
+        <form onSubmit={handleSubmit} className="job-form">
+            <label>
+                Title:
+                <input type="text" name="title" value={formData.title} onChange={handleChange} required />
+            </label>
+            <label>
+                Description:
+                <textarea name="description" value={formData.description} onChange={handleChange} required />
+            </label>
+            <label>
+                Company:
+                <input type="text" name="company" value={formData.company} onChange={handleChange} required />
+            </label>
+            <label>
+                Location:
+                <input type="text" name="location" value={formData.location} onChange={handleChange} required />
+            </label>
+            <label>
+                Date Posted:
+                <input type="date" name="date_posted" value={formData.date_posted} onChange={handleChange} required />
+            </label>
+            <button type="submit">Add Job</button>
+        </form>
+    );
+};
 
 export default JobForm;

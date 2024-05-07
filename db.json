@@ -1,355 +1,122 @@
 {
-    "jobs" : [
-        {
-            "id": 1,
-            "title": "Software Developer",
-            "description": "We are seeking a talented software developer to join our team and contribute to the development of innovative software solutions.",
-            "location": "Nairobi",
-            "industry": "Technology",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Tech Solutions Ltd"
-        },
-        {
-            "id": 2,
-            "title": "Marketing Executive",
-            "description": "Join our marketing team to promote our products/services and execute marketing campaigns to drive business growth.",
-            "location": "Mombasa",
-            "industry": "Marketing",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Marketing Masters Inc"
-        },
-        {
-            "id": 3,
-            "title": "Financial Analyst",
-            "description": "Seeking a financial analyst to analyze financial data and provide insights to support decision-making processes.",
-            "location": "Kisumu",
-            "industry": "Finance",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Finance Experts Ltd"
-        },
-        {
-            "id": 4,
-            "title": "Graphic Designer",
-            "description": "We are hiring a creative graphic designer to design visually appealing graphics for our marketing materials and products.",
-            "location": "Eldoret",
-            "industry": "Design",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Design Innovations Inc"
-        },
-        {
-            "id": 5,
-            "title": "IT Support Specialist",
-            "description": "Provide technical support and assistance to our clients to ensure smooth operation of IT systems and services.",
-            "location": "Nakuru",
-            "industry": "Technology",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "IT Solutions Ltd"
-        },
-        {
-            "id": 6,
-            "title": "Human Resources Officer",
-            "description": "Join our HR team to handle recruitment, employee relations, and other HR functions to support the organization's objectives.",
-            "location": "Kisii",
-            "industry": "Human Resources",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "HR Solutions Ltd"
-        },
-        {
-            "id": 7,
-            "title": "Sales Representative",
-            "description": "Seeking a dynamic sales representative to drive sales and expand our customer base in the Kenyan market.",
-            "location": "Thika",
-            "industry": "Sales",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Sales Pro Ltd"
-        },
-        {
-            "id": 8,
-            "title": "Customer Support Associate",
-            "description": "Provide excellent customer support and resolve customer issues in a timely and efficient manner.",
-            "location": "Machakos",
-            "industry": "Customer Service",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Customer Care Inc"
-        },
-        {
-            "id": 9,
-            "title": "Project Manager",
-            "description": "Manage and oversee various projects to ensure they are completed on time, within budget, and meet quality standards.",
-            "location": "Kakamega",
-            "industry": "Project Management",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Project Management Solutions Ltd"
-        },
-        {
-            "id": 10,
-            "title": "Accountant",
-            "description": "We are hiring an accountant to manage financial transactions, prepare financial reports, and ensure compliance with accounting standards.",
-            "location": "Kitale",
-            "industry": "Finance",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Financial Experts Ltd"
-        },
-        {
-            "id": 11,
-            "title": "Software Engineer",
-            "description": "Join our software development team to design, develop, and maintain high-quality software solutions.",
-            "location": "Nairobi",
-            "industry": "Technology",
-            "experience_level": "Senior-Level",
-            "work_type": "Full-Time",
-            "company": "Tech Solutions Ltd"
-        },
-        {
-            "id": 12,
-            "title": "Content Writer",
-            "description": "We are seeking a creative content writer to produce engaging and informative content for our website, blog, and social media channels.",
-            "location": "Mombasa",
-            "industry": "Marketing",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Content Creations Inc"
-        },
-        {
-            "id": 13,
-            "title": "Financial Controller",
-            "description": "Manage and oversee all financial activities of the organization to ensure compliance with regulations and achieve financial objectives.",
-            "location": "Kisumu",
-            "industry": "Finance",
-            "experience_level": "Senior-Level",
-            "work_type": "Full-Time",
-            "company": "Finance Mastery Ltd"
-        },
-        {
-            "id": 14,
-            "title": "UX/UI Designer",
-            "description": "Design intuitive user interfaces and engaging user experiences for our web and mobile applications.",
-            "location": "Eldoret",
-            "industry": "Design",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "DesignCraft Studios"
-        },
-        {
-            "id": 15,
-            "title": "Network Administrator",
-            "description": "Administer and maintain our computer networks to ensure they operate efficiently and securely.",
-            "location": "Nakuru",
-            "industry": "Technology",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Network Solutions Ltd"
-        },
-        {
-            "id": 16,
-            "title": "HR Coordinator",
-            "description": "Assist with various HR functions including recruitment, onboarding, training, and employee relations.",
-            "location": "Kisii",
-            "industry": "Human Resources",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "HR Pro Services"
-        },
-        {
-            "id": 17,
-            "title": "Business Development Manager",
-            "description": "Develop and implement strategies to expand our business and increase revenue.",
-            "location": "Thika",
-            "industry": "Sales",
-            "experience_level": "Senior-Level",
-            "work_type": "Full-Time",
-            "company": "Business Growth Inc"
-        },
-        {
-            "id": 18,
-            "title": "Technical Support Engineer",
-            "description": "Provide technical support to customers and troubleshoot issues related to our products/services.",
-            "location": "Machakos",
-            "industry": "Customer Service",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Tech Support Solutions Ltd"
-        },
-        {
-            "id": 19,
-            "title": "Project Coordinator",
-            "description": "Coordinate and manage project activities to ensure they are completed on time and within budget.",
-            "location": "Kakamega",
-            "industry": "Project Management",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Project Coordination Services Ltd"
-        },
-        {
-            "id": 20,
-            "title": "Tax Accountant",
-            "description": "Prepare and file tax returns, ensure compliance with tax laws, and provide tax planning advice.",
-            "location": "Kitale",
-            "industry": "Finance",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Tax Solutions Ltd"
-        },
-        {
-            "id": 21,
-            "title": "Database Administrator",
-            "description": "Administer and maintain our databases to ensure they operate efficiently and securely.",
-            "location": "Nairobi",
-            "industry": "Technology",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Database Management Inc"
-        },
-        {
-            "id": 22,
-            "title": "Social Media Manager",
-            "description": "Manage our social media accounts, create engaging content, and interact with our online community.",
-            "location": "Mombasa",
-            "industry": "Marketing",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Social Buzz Ltd"
-        },
-        {
-            "id": 23,
-            "title": "Financial Advisor",
-            "description": "Provide financial advice and guidance to clients to help them make informed financial decisions.",
-            "location": "Kisumu",
-            "industry": "Finance",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Financial Advisory Services Ltd"
-        },
-        {
-            "id": 24,
-            "title": "UI/UX Designer",
-            "description": "Create user-centered designs for our digital products, focusing on usability and visual appeal.",
-            "location": "Eldoret",
-            "industry": "Design",
-            "experience_level": "Senior-Level",
-            "work_type": "Full-Time",
-            "company": "Design Solutions Ltd"
-        },
-        {
-            "id": 25,
-            "title": "IT Technician",
-            "description": "Provide technical support and troubleshooting for hardware and software issues.",
-            "location": "Nakuru",
-            "industry": "Technology",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "IT Assistance Ltd"
-        },
-        {
-            "id": 26,
-            "title": "HR Assistant",
-            "description": "Assist with various HR tasks including recruitment, employee onboarding, and HR record maintenance.",
-            "location": "Kisii",
-            "industry": "Human Resources",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "HR Support Services Ltd"
-        },
-        {
-            "id": 27,
-            "title": "Sales Executive",
-            "description": "Identify new business opportunities and build relationships with potential clients to drive sales.",
-            "location": "Thika",
-            "industry": "Sales",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Sales Accelerator Ltd"
-        },
-        {
-            "id": 28,
-            "title": "Customer Service Representative",
-            "description": "Handle customer inquiries, resolve issues, and provide exceptional service to our clients.",
-            "location": "Machakos",
-            "industry": "Customer Service",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Customer Care Solutions Inc"
-        },
-        {
-            "id": 29,
-            "title": "Assistant Project Manager",
-            "description": "Support the project manager in planning, organizing, and coordinating project activities.",
-            "location": "Kakamega",
-            "industry": "Project Management",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Project Management Assist Ltd"
-        },
-        {
-            "id": 30,
-            "title": "Financial Analyst",
-            "description": "Analyze financial data, prepare reports, and provide insights to support decision-making processes.",
-            "location": "Kitale",
-            "industry": "Finance",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Financial Analysis Experts Ltd"
-        },
-        {
-            "id": 31,
-            "title": "Software Tester",
-            "description": "Test software applications to ensure they meet quality standards and perform as expected.",
-            "location": "Nairobi",
-            "industry": "Technology",
-            "experience_level": "Entry-Level",
-            "work_type": "Full-Time",
-            "company": "Software Testing Inc"
-        },
-        {
-            "id": 32,
-            "title": "Public Relations Manager",
-            "description": "Develop and implement PR strategies to build and maintain a positive public image for the company.",
-            "location": "Mombasa",
-            "industry": "Public Relations",
-            "experience_level": "Senior-Level",
-            "work_type": "Full-Time",
-            "company": "PR Masters Ltd"
-        },
-        {
-            "id": 33,
-            "title": "Investment Analyst",
-            "description": "Conduct financial research and analysis to identify investment opportunities and provide recommendations.",
-            "location": "Kisumu",
-            "industry": "Finance",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Investment Analytics Ltd"
-        },
-        {
-            "id": 34,
-            "title": "Digital Marketing Specialist",
-            "description": "Plan and execute digital marketing campaigns to increase brand awareness and drive online traffic.",
-            "location": "Eldoret",
-            "industry": "Marketing",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "Digital Marketing Experts Ltd"
-        },
-        {
-            "id": 35,
-            "title": "Systems Administrator",
-            "description": "Manage and maintain our computer systems and networks to ensure they operate smoothly and securely.",
-            "location": "Nakuru",
-            "industry": "Technology",
-            "experience_level": "Mid-Level",
-            "work_type": "Full-Time",
-            "company": "System Solutions Ltd"
-        }
-    ]
-    
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Developer",
+      "description": "We are seeking a talented software developer to join our team and contribute to the development of innovative software solutions.",
+      "location": "Nairobi",
+      "industry": "Technology",
+      "experience_level": "Mid-Level",
+      "work_type": "Full-Time",
+      "company": "Tech Solutions Ltd",
+      "date_posted": "2024-05-07"
+    },
+    {
+      "id": 2,
+      "title": "Marketing Executive",
+      "description": "Join our marketing team to promote our products/services and execute marketing campaigns to drive business growth.",
+      "location": "Mombasa",
+      "industry": "Marketing",
+      "experience_level": "Entry-Level",
+      "work_type": "Full-Time",
+      "company": "Marketing Masters Inc",
+      "date_posted": "2024-05-06"
+    },
+    {
+      "id": 3,
+      "title": "Financial Analyst",
+      "description": "Seeking a financial analyst to analyze financial data and provide insights to support decision-making processes.",
+      "location": "Kisumu",
+      "industry": "Finance",
+      "experience_level": "Mid-Level",
+      "work_type": "Full-Time",
+      "company": "Finance Experts Ltd",
+      "date_posted": "2024-05-05"
+    },
+    {
+      "id": 4,
+      "title": "Graphic Designer",
+      "description": "We are hiring a creative graphic designer to design visually appealing graphics for our marketing materials and products.",
+      "location": "Eldoret",
+      "industry": "Design",
+      "experience_level": "Entry-Level",
+      "work_type": "Full-Time",
+      "company": "Design Innovations Inc",
+      "date_posted": "2024-05-04"
+    },
+    {
+      "id": 5,
+      "title": "IT Support Specialist",
+      "description": "Provide technical support and assistance to our clients to ensure smooth operation of IT systems and services.",
+      "location": "Nakuru",
+      "industry": "Technology",
+      "experience_level": "Entry-Level",
+      "work_type": "Full-Time",
+      "company": "IT Solutions Ltd",
+      "date_posted": "2024-05-03"
+    },
+    {
+      "id": 6,
+      "title": "Human Resources Officer",
+      "description": "Join our HR team to handle recruitment, employee relations, and other HR functions to support the organization's objectives.",
+      "location": "Kisii",
+      "industry": "Human Resources",
+      "experience_level": "Mid-Level",
+      "work_type": "Full-Time",
+      "company": "HR Solutions Ltd",
+      "date_posted": "2024-05-02"
+    },
+    {
+      "id": 7,
+      "title": "Sales Representative",
+      "description": "Seeking a dynamic sales representative to drive sales and expand our customer base in the Kenyan market.",
+      "location": "Thika",
+      "industry": "Sales",
+      "experience_level": "Entry-Level",
+      "work_type": "Full-Time",
+      "company": "Sales Pro Ltd",
+      "date_posted": "2024-05-01"
+    },
+    {
+      "id": 8,
+      "title": "Customer Support Associate",
+      "description": "Provide excellent customer support and resolve customer issues in a timely and efficient manner.",
+      "location": "Machakos",
+      "industry": "Customer Service",
+      "experience_level": "Entry-Level",
+      "work_type": "Full-Time",
+      "company": "Customer Care Inc",
+      "date_posted": "2024-04-30"
+    },
+    {
+      "id": 9,
+      "title": "Project Manager",
+      "description": "Manage and oversee various projects to ensure they are completed on time, within budget, and meet quality standards.",
+      "location": "Kakamega",
+      "industry": "Project Management",
+      "experience_level": "Mid-Level",
+      "work_type": "Full-Time",
+      "company": "Project Management Solutions Ltd",
+      "date_posted": "2024-04-29"
+    },
+    {
+      "id": 10,
+      "title": "Accountant",
+      "description": "We are hiring an accountant to manage financial transactions, prepare financial reports, and ensure compliance with accounting standards.",
+      "location": "Kitale",
+      "industry": "Finance",
+      "experience_level": "Mid-Level",
+      "work_type": "Full-Time",
+      "company": "Financial Experts Ltd",
+      "date_posted": "2024-04-28"
+    },
+    {
+      "id": "7705",
+      "title": "tgteg",
+      "description": "gtgtght",
+      "company": "gtghtg",
+      "location": "gththtyh",
+      "date_posted": "2024-05-07"
+    }
+  ]
 }

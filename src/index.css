@@ -36,3 +36,94 @@ code {
 .navbar a:hover {
   text-decoration: underline;
 }
+
+
+/* Styles for the job listing cards */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+  
+.card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card .company {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .location {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.card .posted {
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* JobForm */
+
+/* styles.css */
+
+.job-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.job-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.job-form input[type="text"],
+.job-form input[type="date"],
+.job-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.job-form textarea {
+  height: 100px; /* Adjust height as needed */
+}
+
+.job-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.job-form button:hover {
+  background-color: #0056b3;
+}
