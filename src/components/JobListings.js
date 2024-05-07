@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from "./NavBar";
+import JobList from './JobList';
 
-const FindWork = () => {
+function JobListings() {
   return (
     <>
         <header>
@@ -11,8 +12,9 @@ const FindWork = () => {
         <h2>Find Work</h2>
         <p>Discover job opportunities that match your skills.</p>
         </div>
+        <JobList />
     </>
   );
 }
 
-export default FindWork;
+export default JobListings;
