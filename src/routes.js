@@ -1,6 +1,6 @@
 import Home from "./components/Home";
-import FindTalent from "./components/FindTalent";
-import FindWork from "./components/FindWork";
+import PostJob from "./components/PostJob";
+import JobListings from "./components/JobListings";
 import ErrorPage from "./components/ErrorPage";
 
 const routes = [
@@ -10,13 +10,13 @@ const routes = [
     errorElement: <ErrorPage />
   }, 
   {
-    path: "/find-talent",
-    element: <FindTalent />,
+    path: "/post-job",
+    element: <PostJob />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/find-work",
-    element: <FindWork />,
+    path: "/job-listings",
+    element: <JobListings />,
     errorElement: <ErrorPage />
   }
 ];
