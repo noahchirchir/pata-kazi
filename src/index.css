@@ -64,7 +64,7 @@ code {
 
 .card p {
   font-size: 14px;
-  color: #666;
+  /* color: #666; */
 }
 
 .card .company {
@@ -80,6 +80,14 @@ code {
 .card .posted {
   font-size: 12px;
   color: #888;
+}
+
+.card:hover{
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
 }
 
 
