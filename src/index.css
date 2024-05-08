@@ -16,10 +16,13 @@ code {
   margin: 1%;
 }
 
+.find-work {
+  margin-left: 5%;
+}
 
 /* Navbar styles */
 .navbar {
-  background-color: #333;
+  background-color: #da2222;
   color: #fff;
   padding: 1rem;
 }
