@@ -7,6 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Home page styling */
+.hero {
+  display:flex;
+  height: 100vh;
+  background-image: url('./components/backgroundimage.webp');
+  background-size: 1200px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6)
+}
+
+.home {
+display: flex;
+flex-direction: column;
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+justify-content:center;
+align-items: center;
+color: white;
+}
+
+.home h1 {
+  font-size: 56px;
+  font-weight: bolder;
+}
+
+.home p {
+  font-size: 22px;
+  margin: 15 0;
+  max-width: 550px;
+  letter-spacing: 2px;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -175,3 +208,26 @@ code {
   justify-content: space-evenly;
  
 }
+
+#save{
+  background-color: #22da4a;
+  margin-right: 10%;
+}
+
+#cancel{
+  background-color: #da2222;
+  margin-left: 10%;
+}
+
+#save:hover{
+  background-color: #057134;
+}
+
+#cancel:hover{
+  background-color: #710505;
+}
+
+/* .edit{
+  z-index: 10;
+  transform: translate(-100%);
+} */

@@ -1,43 +1,3 @@
-// import React from 'react';
-// const JobItem = ({ job, onDelete }) => {
-//   const { id, title, description, company, location, date_posted } = job;
-
-//   const handleDeleteClick = () => {
-//     onDelete(id);
-//   };
-
-//   return (
-//     <div className="card">
-//       <h3>{title}</h3>
-//       <p className="company">{company}</p>
-//       <p className='description'>{description}</p>
-//       <div className="extra content">
-//           <span>
-//           <i class="fa-solid fa-location-dot"></i>
-//             {location}
-//           </span>
-//           <span>
-//             <i className="fa-solid fa-calendar-days"></i>
-//             { date_posted}
-//           </span>
-//           <span className="delete-icon-container" onClick={handleDeleteClick}>
-//             <i className="fa-solid fa-pen"></i>
-//             <span className="delete-text">Edit</span>
-//           </span>
-//           <span className="delete-icon-container" onClick={handleDeleteClick}>
-//             <i className="fa-solid fa-trash-can"></i>
-//             <span className="delete-text">Delete</span>
-//           </span>
-//         </div>
-
-      
-//     </div>
-//   );
-// };
-
-// export default JobItem;
-
-
 import React, { useState } from 'react';
 
 
@@ -55,10 +15,15 @@ const JobItem = ({ job, onDelete, onEdit }) => {
     setIsEditing(true);
   };
 
+  // const handleDeleteClick = () => {
+  //       onDelete(id);
+  //     };
   const handleDeleteClick = () => {
-        onDelete(id);
-      };
-    
+    const confirmDelete = window.confirm("Are you sure you want to delete this job?");
+    if (confirmDelete) {
+      onDelete(id);
+    }
+  };
 
   const handleSaveClick = () => {
     const editedJob = {
@@ -83,25 +48,12 @@ const JobItem = ({ job, onDelete, onEdit }) => {
     setIsEditing(false);
   };
 
+  const name = isEditing ? 'card' : 'card';
+
   return (
-    <div className="card">
+    <div className = {name}>
       {isEditing ? (
         <>
-          {/* <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
-          <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} />
-          <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
-          <input type="date" value={datePosted} onChange={(e) => setDatePosted(e.target.value)} />
-          <div>
-          <span className="delete-icon-container" onClick={handleSaveClick}>
-             <i className="fa-solid fa-pen"></i>
-             <span className="delete-text">Save</span>
-           </span>
-           <span className="delete-icon-container" onClick={handleCancelClick}>
-             <i className="fa-solid fa-trash-can"></i>
-             <span className="delete-text">Cancel</span>
-           </span>
-          </div> */}
           <form  className="job-form edit">
             <label>
                 Title:
@@ -124,8 +76,8 @@ const JobItem = ({ job, onDelete, onEdit }) => {
                 <input type="date" name="date_posted" value={datePosted} onChange={(e) => setDatePosted(e.target.value)}required />
             </label>
             <div className='button-holder'>
-              <button type="button" onClick={handleSaveClick}>Save</button>
-              <button type="button" onClick={handleCancelClick}>Cancel</button>
+              <button id ="save" type="button" onClick={handleSaveClick}>Save</button>
+              <button id ="cancel" type="button" onClick={handleCancelClick}>Cancel</button>
             </div>
         </form>
         </>
