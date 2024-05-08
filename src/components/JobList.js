@@ -19,7 +19,7 @@ const JobList = () => {
 
   return (
     <div className="job-list">
-      <h2>Job Listings</h2>
+      {/* <h2>Job Listings</h2> */}
       <ul className='container'>
         {jobs.map(job => (
           <JobItem key={job.id} job={job} />

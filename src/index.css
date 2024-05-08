@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.job-list{
+  margin: 1%;
+}
+
+
 /* Navbar styles */
 .navbar {
   background-color: #333;
@@ -43,7 +48,7 @@ code {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding: 20px;
 }
   
@@ -52,9 +57,8 @@ code {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /*width: 300px;*/
+  margin: 20px;
 }
 
 .card h3 {
@@ -92,8 +96,6 @@ code {
 
 
 /* JobForm */
-
-/* styles.css */
 
 .job-form {
   max-width: 400px;
