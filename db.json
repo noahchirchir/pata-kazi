@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Software Developer",
       "description": "We are seeking a talented software developer to join our team and contribute to the development of innovative software solutions.",
       "location": "Nairobi",
@@ -12,7 +12,7 @@
       "date_posted": "2024-05-07"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Marketing Executive",
       "description": "Join our marketing team to promote our products/services and execute marketing campaigns to drive business growth.",
       "location": "Mombasa",
@@ -23,73 +23,15 @@
       "date_posted": "2024-05-06"
     },
     {
-      "id": 3,
-      "title": "Financial Analyst",
-      "description": "Seeking a financial analyst to analyze financial data and provide insights to support decision-making processes.",
-      "location": "Kisumu",
-      "industry": "Finance",
-      "experience_level": "Mid-Level",
-      "work_type": "Full-Time",
-      "company": "Finance Experts Ltd",
-      "date_posted": "2024-05-05"
-    },
-    {
-      "id": 4,
-      "title": "Graphic Designer",
-      "description": "We are hiring a creative graphic designer to design visually appealing graphics for our marketing materials and products.",
-      "location": "Eldoret",
-      "industry": "Design",
-      "experience_level": "Entry-Level",
-      "work_type": "Full-Time",
-      "company": "Design Innovations Inc",
-      "date_posted": "2024-05-04"
-    },
-    {
-      "id": 5,
-      "title": "IT Support Specialist",
-      "description": "Provide technical support and assistance to our clients to ensure smooth operation of IT systems and services.",
-      "location": "Nakuru",
-      "industry": "Technology",
-      "experience_level": "Entry-Level",
-      "work_type": "Full-Time",
-      "company": "IT Solutions Ltd",
-      "date_posted": "2024-05-03"
-    },
-    {
-      "id": 6,
-      "title": "Human Resources Officer",
-      "description": "Join our HR team to handle recruitment, employee relations, and other HR functions to support the organization's objectives.",
-      "location": "Kisii",
-      "industry": "Human Resources",
-      "experience_level": "Mid-Level",
-      "work_type": "Full-Time",
-      "company": "HR Solutions Ltd",
-      "date_posted": "2024-05-02"
-    },
-    {
-      "id": 7,
-      "title": "Sales Representative",
-      "description": "Seeking a dynamic sales representative to drive sales and expand our customer base in the Kenyan market.",
-      "location": "Thika",
-      "industry": "Sales",
-      "experience_level": "Entry-Level",
-      "work_type": "Full-Time",
-      "company": "Sales Pro Ltd",
-      "date_posted": "2024-05-01"
-    },
-    {
-      "id": 8,
+      "id": "8",
       "title": "Customer Support Associate",
       "description": "Provide excellent customer support and resolve customer issues in a timely and efficient manner.",
-      "location": "Machakos",
-      "industry": "Customer Service",
-      "experience_level": "Entry-Level",
-      "work_type": "Full-Time",
       "company": "Customer Care Inc",
+      "location": "Machakoskll",
       "date_posted": "2024-04-30"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Project Manager",
       "description": "Manage and oversee various projects to ensure they are completed on time, within budget, and meet quality standards.",
       "location": "Kakamega",
@@ -100,7 +42,7 @@
       "date_posted": "2024-04-29"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Accountant",
       "description": "We are hiring an accountant to manage financial transactions, prepare financial reports, and ensure compliance with accounting standards.",
       "location": "Kitale",
@@ -109,22 +51,6 @@
       "work_type": "Full-Time",
       "company": "Financial Experts Ltd",
       "date_posted": "2024-04-28"
-    },
-    {
-      "id": "7705",
-      "title": "tgteg",
-      "description": "gtgtght",
-      "company": "gtghtg",
-      "location": "gththtyh",
-      "date_posted": "2024-05-07"
-    },
-    {
-      "id": "ce7f",
-      "title": "Electrician",
-      "description": "Skilled electrician offering expertise in residential and commercial electrical systems. Proficient in installations, repairs, and maintenance to ensure safety and efficiency. Dedicated to delivering top-notch service and resolving electrical issues promptly. Seeking clients in need of reliable and professional electrical solutions.",
-      "company": "HomePro Services",
-      "location": "Nairobi",
-      "date_posted": "20224-05-07"
     }
   ]
 }
