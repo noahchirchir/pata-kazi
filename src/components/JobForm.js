@@ -10,6 +10,7 @@ function JobForm(){
         location: '',
         date_posted: ''
     });
+    const [error, setError] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -36,6 +37,7 @@ function JobForm(){
         })
         .catch(error => {
           console.error('Error posting job:', error);
+          setError('Failed to add job. Please try again.');
         });
     };
   
