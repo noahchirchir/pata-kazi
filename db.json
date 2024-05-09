@@ -1,17 +1,6 @@
 {
   "jobs": [
     {
-      "id": "1",
-      "title": "Software Developer",
-      "description": "We are seeking a talented software developer to join our team and contribute to the development of innovative software solutions.",
-      "location": "Nairobi",
-      "industry": "Technology",
-      "experience_level": "Mid-Level",
-      "work_type": "Full-Time",
-      "company": "Tech Solutions Ltd",
-      "date_posted": "2024-05-07"
-    },
-    {
       "id": "2",
       "title": "Marketing Executive",
       "description": "Join our marketing team to promote our products/services and execute marketing campaigns to drive business growth.",
@@ -37,11 +26,8 @@
       "id": "4",
       "title": "Graphic Designer",
       "description": "We are hiring a creative graphic designer to design visually appealing graphics for our marketing materials and products.",
-      "location": "Eldoret",
-      "industry": "Design",
-      "experience_level": "Entry-Level",
-      "work_type": "Full-Time",
       "company": "Design Innovations Inc",
+      "location": "Eldoret",
       "date_posted": "2024-05-04"
     },
     {
@@ -279,11 +265,8 @@
       "id": "26",
       "title": "School Principal",
       "description": "Provide leadership and management to the school, oversee academic programs, and foster a positive learning environment.",
-      "location": "Kisii",
-      "industry": "Education",
-      "experience_level": "Senior-Level",
-      "work_type": "Full-Time",
       "company": "Kisii International School",
+      "location": "Kisii",
       "date_posted": "2024-05-02"
     },
     {
