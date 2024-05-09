@@ -11,7 +11,7 @@ const FindTalent = () => {
         <main className="talent-page-container">
             <h2>Find Talent</h2>
             <p>Enlist a job opportunity for qualifying individuals</p>
-        </div>
+        </main>
         <JobForm />
         </>
     );
