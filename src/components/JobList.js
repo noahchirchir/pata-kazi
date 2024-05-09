@@ -9,6 +9,7 @@ const JobList = () => {
     axios.get('https://job-lists.onrender.com/jobs')
       .then(response => {
         setJobs(response.data);
+        console.log('Jobs fetched successfully');
       })
       .catch(error => {
         console.error('Error fetching jobs:', error);
@@ -36,10 +37,12 @@ const JobList = () => {
           return job;
         }));
         console.log('Job updated successfully:', response.data);
+        window.location.reload();
       })
       .catch(error => {
         console.error('Error updating job:', error);
       });
+    
   };
 
   return (
