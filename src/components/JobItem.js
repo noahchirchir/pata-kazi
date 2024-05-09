@@ -55,10 +55,6 @@ const JobItem = ({ job, onDelete, onEdit }) => {
       document.body.classList.remove('blur'); 
   };
 
-  
-
-  const name = isEditing ? 'card' : 'card';
-
   return (
     <div className="card">
       <Popup open={isEditing} onClose={handleCancelClick}>
