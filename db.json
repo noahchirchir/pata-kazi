@@ -1,6 +1,7 @@
 {
   "jobs": [
     {
+
       "id": "1",
       "title": "Software Developer",
       "description": "We are seeking a talented software developer to join our team and contribute to the development of innovative software solutions.",
@@ -213,6 +214,7 @@
       "title": "Catering Manager",
       "description": "Plan and coordinate catering services for events, manage staff, and ensure high-quality food and service.",
       "company": "Thika Catering Services",
+      "industry": "Hospitality",
       "location": "Thika",
       "date_posted": "2024-04-30"
     },

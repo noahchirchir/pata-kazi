@@ -8,10 +8,10 @@ const FindTalent = () => {
         <header>
             <NavBar />
         </header>
-        <div className="find-talent">
+        <main className="talent-page-container">
             <h2>Find Talent</h2>
-            <p>Explore profiles of talented individuals.</p>
-        </div>
+            <p>Enlist a job opportunity for qualifying individuals</p>
+        </main>
         <JobForm />
         </>
     );
