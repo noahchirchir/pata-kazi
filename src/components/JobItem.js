@@ -12,10 +12,7 @@ const JobItem = ({ job, onDelete, onEdit }) => {
   const [datePosted, setDatePosted] = useState(initialDatePosted);
 
   const handleEditClick = () => {
-    const confirmEdit = window.confirm("Are you sure you want to edit this job?");
-    if (confirmEdit) {
     setIsEditing(true);
-    }
   };
 
   // const handleDeleteClick = () => {
@@ -23,11 +20,8 @@ const JobItem = ({ job, onDelete, onEdit }) => {
   //     };
   const handleDeleteClick = () => {
     const confirmDelete = window.confirm("Are you sure you want to delete this job?");
-    if (confirmDelete && typeof onDelete === 'function') {
+    if (confirmDelete) {
       onDelete(id);
-    }
-    else {
-      console.error("onDelete is not a function or is not provided.");
     }
   };
 
