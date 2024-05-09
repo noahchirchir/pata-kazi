@@ -45,11 +45,11 @@ code {
     monospace;
 }
 
-.job-list{
+.job-list {
   margin: 1%;
 }
 
-.find-work {
+.find-work, .find-talent {
   margin-left: 5%;
 }
 

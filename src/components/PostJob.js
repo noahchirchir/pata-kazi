@@ -10,7 +10,7 @@ const FindTalent = () => {
         </header>
         <div className="find-talent">
             <h2>Find Talent</h2>
-            <p>Explore profiles of talented individuals.</p>
+            <p>Enlist a job opportunity for qualifying individuals</p>
         </div>
         <JobForm />
         </>
