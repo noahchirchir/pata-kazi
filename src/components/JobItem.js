@@ -1,4 +1,6 @@
+import { all } from 'axios';
 import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
 
 
 const JobItem = ({ job, onDelete, onEdit }) => {
@@ -13,11 +15,9 @@ const JobItem = ({ job, onDelete, onEdit }) => {
 
   const handleEditClick = () => {
     setIsEditing(true);
+    document.body.classList.add('blur'); 
   };
 
-  // const handleDeleteClick = () => {
-  //       onDelete(id);
-  //     };
   const handleDeleteClick = () => {
     const confirmDelete = window.confirm("Are you sure you want to delete this job?");
     if (confirmDelete) {
@@ -36,6 +36,12 @@ const JobItem = ({ job, onDelete, onEdit }) => {
     };
     onEdit(editedJob);
     setIsEditing(false);
+    document.body.classList.remove('blur'); 
+    
+  };
+
+  const handleReloadClick = () => {
+    window.location.reload();
   };
 
   const handleCancelClick = () => {
@@ -46,66 +52,66 @@ const JobItem = ({ job, onDelete, onEdit }) => {
     setLocation(initialLocation);
     setDatePosted(initialDatePosted);
     setIsEditing(false);
+      document.body.classList.remove('blur'); 
   };
+
+  
 
   const name = isEditing ? 'card' : 'card';
 
   return (
-    <div className = {name}>
-      {isEditing ? (
-        <>
-          <form  className="job-form edit">
-            <label>
-                Title:
-                <input type="text" name="title" value={title}   onChange={(e) => setTitle(e.target.value)}  required />
-            </label>
-            <label>
-                Description:
-                <textarea name="description" value={description} onChange={(e) => setDescription(e.target.value)} required />
-            </label>
-            <label>
-                Company:
-                <input type="text" name="company" value={company}  onChange={(e) => setCompany(e.target.value)} required />
-            </label>
-            <label>
-                Location:
-                <input type="text" name="location" value={location} onChange={(e) => setLocation(e.target.value)} required />
-            </label>
-            <label>
-                Date Posted:
-                <input type="date" name="date_posted" value={datePosted} onChange={(e) => setDatePosted(e.target.value)}required />
-            </label>
-            <div className='button-holder'>
-              <button id ="save" type="button" onClick={handleSaveClick}>Save</button>
-              <button id ="cancel" type="button" onClick={handleCancelClick}>Cancel</button>
-            </div>
-        </form>
-        </>
-      ) : (
-        <>
-        <h3>{title}</h3>
-        <p className="company">{company}</p>
-        <p className='description'>{description}</p>
-        <div className="extra content">
-            <span>
-            <i class="fa-solid fa-location-dot"></i>
-              {location}
-            </span>
-            <span>
-              <i className="fa-solid fa-calendar-days"></i>
-              {datePosted}
-            </span>
-            <span className="delete-icon-container" onClick={handleEditClick}>
-              <i className="fa-solid fa-pen"></i>
-              <span className="delete-text">Edit</span>
-            </span>
-            <span className="delete-icon-container" onClick={handleDeleteClick}>
-              <i className="fa-solid fa-trash-can"></i>
-              <span className="delete-text">Delete</span>
-            </span>
+    <div className="card">
+      <Popup open={isEditing} onClose={handleCancelClick}>
+        <div className="popup-overlay"></div> {/* New overlay div */}
+        <form className="job-form edit">
+          <label>
+            Title:
+            <input type="text" name="title" value={title} onChange={(e) => setTitle(e.target.value)} required />
+          </label>
+          <label>
+            Description:
+            <textarea name="description" value={description} onChange={(e) => setDescription(e.target.value)} required />
+          </label>
+          <label>
+            Company:
+            <input type="text" name="company" value={company} onChange={(e) => setCompany(e.target.value)} required />
+          </label>
+          <label>
+            Location:
+            <input type="text" name="location" value={location} onChange={(e) => setLocation(e.target.value)} required />
+          </label>
+          <label>
+            Date Posted:
+            <input type="date" name="date_posted" value={datePosted} onChange={(e) => setDatePosted(e.target.value)} required />
+          </label>
+          <div className="button-holder">
+            <button id="save" type="button" onClick={() => {handleSaveClick(); handleReloadClick();}}>Save</button>
+            <button id="cancel" type="button" onClick={handleCancelClick}>Cancel</button>
           </div>
-        </>
-      )}
+        </form>
+      </Popup>
+      <h3>{title}</h3>
+      <p className="company">{company}</p>
+      <p className="description">{description}</p>
+      <div className="extra content">
+        <span>
+          <i className="fa-solid fa-location-dot"></i>
+          {location}
+        </span>
+        <span>
+          <i className="fa-solid fa-calendar-days"></i>
+          {datePosted}
+        </span>
+        <span className="delete-icon-container" onClick={handleEditClick}>
+          <i className="fa-solid fa-pen"></i>
+          <span className="delete-text">Edit</span>
+        </span>
+        <span className="delete-icon-container" onClick={() => handleDeleteClick(id)}>
+          <i className="fa-solid fa-trash-can"></i>
+          <span className="delete-text">Delete</span>
+        </span>
+      </div>
+      
     </div>
   );
 };
