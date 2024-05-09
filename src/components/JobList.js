@@ -6,7 +6,7 @@ const JobList = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/jobs')
+    axios.get('https://job-lists.onrender.com/jobs')
       .then(response => {
         setJobs(response.data);
       })
@@ -16,7 +16,7 @@ const JobList = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4000/jobs/${id}`)
+    axios.delete(`https://job-lists.onrender.com/jobs/${id}`)
       .then(response => {
         setJobs(prevJobs => prevJobs.filter(job => job.id !== id));
         console.log('Job deleted successfully:', response.data);
@@ -27,7 +27,7 @@ const JobList = () => {
   };
 
   const handleEdit = (editedJob) => {
-    axios.put(`http://localhost:4000/jobs/${editedJob.id}`, editedJob)
+    axios.put(`https://job-lists.onrender.com/jobs/${editedJob.id}`, editedJob)
       .then(response => {
         setJobs(prevJobs => prevJobs.map(job => {
           if (job.id === editedJob.id) {

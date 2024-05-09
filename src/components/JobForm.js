@@ -23,7 +23,7 @@ function JobForm(){
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      axios.post('http://localhost:4000/jobs', formData)
+      axios.post('https://job-lists.onrender.com/jobs', formData)
         .then(response => {
           console.log('Job posted successfully:', response.data);
           // Reset form fields
