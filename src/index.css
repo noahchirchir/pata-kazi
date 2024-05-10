@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 65px; /*to make body appear below the fixed navbar*/
 }
 
 /* Home page styling */
@@ -17,14 +18,14 @@ body {
 }
 
 .home {
-display: flex;
-flex-direction: column;
-max-width: 1200px;
-width: 100%;
-margin: 0 auto;
-justify-content:center;
-align-items: center;
-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content:center;
+  align-items: center;
+  color: white;
 }
 
 .home h1 {
@@ -52,12 +53,21 @@ code {
 .find-work, .talent-page-container {
   margin-left: 5%;
 }
-
+.find-work{
+  display: flex;
+  margin-right: 5%;
+  justify-content: space-between;
+  
+}
 /* Navbar styles */
 .navbar {
   background-color: #da2222;
   color: #fff;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -256,7 +266,12 @@ code {
   background-color: #710505;
 }
 
-/* .edit{
-  z-index: 10;
-  transform: translate(-100%);
-} */
+
+.filter-options{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-weight: bold;
+}
