@@ -155,7 +155,8 @@ code {
 }
 
 .job-form input[type="text"],
-.job-form input[type="date"] {
+.job-form input[type="date"],
+.job-form select {
   width: 100%;
   padding: 8px;
   margin-top: 4px;
@@ -172,10 +173,7 @@ code {
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #f0f0f0; 
-}
-
-.job-form textarea {
-  height: 100px; 
+  height: 60px; 
 }
 
 .job-form button {

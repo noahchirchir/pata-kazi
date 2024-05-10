@@ -15,11 +15,42 @@ function JobListings() {
         setJobs(response.data);
         setFilteredJobs(response.data); // Initialize filtered jobs with all jobs
         console.log('Jobs fetched successfully');
+        console.log(response.data);
       })
       .catch(error => {
         console.error('Error fetching jobs:', error);
       });
   }, []);
+
+  const handleDelete = (id) => {
+    axios.delete(`https://job-lists.onrender.com/jobs/${id}`)
+      .then(response => {
+        setJobs(jobs => jobs.filter(job => job.id !== id));
+        console.log('Job deleted successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Error deleting job:', error);
+      });
+  };
+
+  const handleEdit = (editedJob) => {
+    axios.put(`https://job-lists.onrender.com/jobs/${editedJob.id}`, editedJob)
+      .then(response => {
+        setJobs(jobs => jobs.map(job => {
+          if (job.id === editedJob.id) {
+            return editedJob;
+          }else{
+            return job;
+          }
+        }));
+        console.log('Job updated successfully:', response.data);
+        window.location.reload(); // update the page to display the latest changes
+      })
+      .catch(error => {
+        console.error('Error updating job:', error);
+      });
+    
+  };
 
   useEffect(() => {
     // Apply filters when filter criteria changes
@@ -68,7 +99,7 @@ function JobListings() {
           </div>
         </div>
       </div>
-      <JobList filteredJobs={filteredJobs} />
+      <JobList filteredJobs={filteredJobs} handleDelete={handleDelete} handleEdit={handleEdit}/>
     </>
   );
 }
